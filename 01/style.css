@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#addTaskForm {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#newTask {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#taskList li:last-child {
+    border-bottom: none;
+}
+
+#taskList li:hover {
+    background-color: #f5f5f5;
+}
+
+#taskList li.complete {
+    text-decoration: line-through;
+}
